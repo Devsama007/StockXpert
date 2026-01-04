@@ -1,0 +1,104 @@
+.App {
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.HeaderStockName {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.left-form {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.left-form div {
+  margin-bottom: 15px;
+}
+
+.left-form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.left-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.left-form button {
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left-form button:disabled {
+  background-color: #ccc;
+}
+
+.left-form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.trading {
+  width: 50%;
+  height: 600px;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+  }
+
+  .left-form {
+    width: 100%;
+  }
+
+  .trading {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+.predictedPrice {
+  position: absolute;
+  top: 90%;
+}
